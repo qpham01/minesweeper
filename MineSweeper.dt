@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-16"?>
-<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT1H38M56.4440265S" SolutionTotalViewTime="PT1H4M6.0381315S" SolutionTotalDebugTime="PT5M18.4406695S">
+<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT1H46M52.6381319S" SolutionTotalViewTime="PT1H9M35.255983S" SolutionTotalDebugTime="PT5M18.4396718S">
   <FileVersion>
     <Major>1</Major>
     <Minor>0</Minor>
@@ -14,101 +14,37 @@
   </ProjectsCreatedDateList>
   <SessionTimeList />
   <LastSessionTimeList>
-    <DevTrackerDataItem ViewActiveTime="PT12.7651512S" EditActiveTime="PT1.7673376S">
-      <ModifiedDate>2020-02-20T20:58:24.9660196-06:00</ModifiedDate>
-      <ModifiedBy>quoc_</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>D:\Quoc\OneDrive\All\MineSweeper\.gitignore</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName />
-      <CreatedDate>2020-02-20T20:58:21.9024555-06:00</CreatedDate>
-      <ViewedBy>quoc_</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT4M20.428469S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>Debug Mode</Item>
-      <ItemType>DebugModeItem</ItemType>
-      <ProjectName />
-      <CreatedDate>2020-02-20T20:33:29.7965347-06:00</CreatedDate>
-      <ViewedBy>quoc_</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT5.3707702S" EditActiveTime="PT4.7223689S">
-      <ModifiedDate>2020-02-20T19:45:37.1103516-06:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT6.2031307S" EditActiveTime="PT12.4822762S">
+      <ModifiedDate>2020-02-21T21:14:38.4008654-06:00</ModifiedDate>
       <ModifiedBy>quoc_</ModifiedBy>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
       <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\IMineSweeper.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\MineSweeper.csproj</ProjectName>
-      <CreatedDate>2020-02-20T19:37:42.9591751-06:00</CreatedDate>
+      <CreatedDate>2020-02-21T21:10:08.331285-06:00</CreatedDate>
       <ViewedBy>quoc_</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT40.6571249S" EditActiveTime="PT3.9951728S">
-      <ModifiedDate>2020-02-20T19:45:37.1721862-06:00</ModifiedDate>
-      <ModifiedBy>quoc_</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeperConsole\IMineSweeperConsoleView.cs</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeperConsole\MineSweeperConsole.csproj</ProjectName>
-      <CreatedDate>2020-02-20T19:37:35.35488-06:00</CreatedDate>
-      <ViewedBy>quoc_</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT16M7.1582889S" EditActiveTime="PT6M48.1380466S">
-      <ModifiedDate>2020-02-20T20:43:12.0743578-06:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT24.7995649S" EditActiveTime="PT3M55.25382S">
+      <ModifiedDate>2020-02-21T21:14:38.4138306-06:00</ModifiedDate>
       <ModifiedBy>quoc_</ModifiedBy>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
       <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\MineSweeper.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\MineSweeper.csproj</ProjectName>
-      <CreatedDate>2020-02-19T21:42:49.8922529-06:00</CreatedDate>
+      <CreatedDate>2020-02-21T21:10:05.9203425-06:00</CreatedDate>
       <ViewedBy>quoc_</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT59.7853385S" EditActiveTime="PT7.2957953S">
-      <ModifiedDate>2020-02-20T19:45:37.1572249-06:00</ModifiedDate>
-      <ModifiedBy>quoc_</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeperConsole\MineSweeperConsoleView.cs</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeperConsole\MineSweeperConsole.csproj</ProjectName>
-      <CreatedDate>2020-02-19T21:42:29.1151666-06:00</CreatedDate>
-      <ViewedBy>quoc_</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT24M4.4514791S" EditActiveTime="PT30M1.3447615S">
-      <ModifiedDate>2020-02-20T20:53:19.1242589-06:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT2M10.3005869S" EditActiveTime="PT2M48.5723811S">
+      <ModifiedDate>2020-02-21T21:18:19.2339694-06:00</ModifiedDate>
       <ModifiedBy>quoc_</ModifiedBy>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
       <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper.UnitTests\MineSweeperTests.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper.UnitTests\MineSweeper.UnitTests.csproj</ProjectName>
-      <CreatedDate>2020-02-20T19:21:45.6455173-06:00</CreatedDate>
-      <ViewedBy>quoc_</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M2.1246651S" EditActiveTime="PT50.2748831S">
-      <ModifiedDate>2020-02-20T20:54:29.1561895-06:00</ModifiedDate>
-      <ModifiedBy>quoc_</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeperConsole\Program.cs</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeperConsole\MineSweeperConsole.csproj</ProjectName>
-      <CreatedDate>2020-02-20T20:53:28.7452708-06:00</CreatedDate>
-      <ViewedBy>quoc_</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT19.2914639S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>D:\Quoc\OneDrive\All\MineSweeper\TextFile1.txt</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName />
-      <CreatedDate>2020-02-20T20:57:52.6018068-06:00</CreatedDate>
+      <CreatedDate>2020-02-21T21:14:44.6611305-06:00</CreatedDate>
       <ViewedBy>quoc_</ViewedBy>
     </DevTrackerDataItem>
   </LastSessionTimeList>
@@ -155,11 +91,11 @@
       <CreatedDate>2020-02-19T20:07:02.3321167-06:00</CreatedDate>
       <ViewedBy>quoc_</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT19.931456S" EditActiveTime="PT1M35.2962444S">
-      <ModifiedDate>2020-02-20T19:45:37.1103516-06:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT26.1345867S" EditActiveTime="PT1M47.7785206S">
+      <ModifiedDate>2020-02-21T21:14:38.4008654-06:00</ModifiedDate>
       <ModifiedBy>quoc_</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\IMineSweeper.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\MineSweeper.csproj</ProjectName>
@@ -188,11 +124,11 @@
       <CreatedDate>2020-02-19T20:07:47.7291069-06:00</CreatedDate>
       <ViewedBy>quoc_</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT20M7.8248906S" EditActiveTime="PT21M57.1200346S">
-      <ModifiedDate>2020-02-20T20:43:12.0743578-06:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT20M32.6244555S" EditActiveTime="PT25M52.3738546S">
+      <ModifiedDate>2020-02-21T21:14:38.4138306-06:00</ModifiedDate>
       <ModifiedBy>quoc_</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\MineSweeper.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\MineSweeper.csproj</ProjectName>
@@ -210,11 +146,11 @@
       <CreatedDate>2020-02-19T20:59:46.5875617-06:00</CreatedDate>
       <ViewedBy>quoc_</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT31M18.0920911S" EditActiveTime="PT43M1.0516203S">
-      <ModifiedDate>2020-02-20T20:53:19.1242589-06:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT33M28.3876917S" EditActiveTime="PT45M49.6240014S">
+      <ModifiedDate>2020-02-21T21:18:19.2339694-06:00</ModifiedDate>
       <ModifiedBy>quoc_</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper.UnitTests\MineSweeperTests.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper.UnitTests\MineSweeper.UnitTests.csproj</ProjectName>
@@ -264,6 +200,39 @@
     </DevTrackerDataItem>
   </TotalTimeList>
   <HistoryTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT2M10.2965978S" EditActiveTime="PT2M48.5723811S">
+      <ModifiedDate>2020-02-21T21:18:19.2339694-06:00</ModifiedDate>
+      <ModifiedBy>quoc_</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper.UnitTests\MineSweeperTests.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper.UnitTests\MineSweeper.UnitTests.csproj</ProjectName>
+      <CreatedDate>2020-02-21T21:14:44.6611305-06:00</CreatedDate>
+      <ViewedBy>quoc_</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6.2031307S" EditActiveTime="PT12.4822762S">
+      <ModifiedDate>2020-02-21T21:14:38.4008654-06:00</ModifiedDate>
+      <ModifiedBy>quoc_</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\IMineSweeper.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\MineSweeper.csproj</ProjectName>
+      <CreatedDate>2020-02-21T21:10:08.331285-06:00</CreatedDate>
+      <ViewedBy>quoc_</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT24.7995649S" EditActiveTime="PT3M55.25382S">
+      <ModifiedDate>2020-02-21T21:14:38.4138306-06:00</ModifiedDate>
+      <ModifiedBy>quoc_</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\MineSweeper.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>D:\Quoc\OneDrive\All\MineSweeper\MineSweeper\MineSweeper.csproj</ProjectName>
+      <CreatedDate>2020-02-21T21:10:05.9203425-06:00</CreatedDate>
+      <ViewedBy>quoc_</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT29.6649564S" EditActiveTime="PT1.3850193S">
       <ModifiedDate>2020-02-20T21:02:34.1933172-06:00</ModifiedDate>
       <ModifiedBy>quoc_</ModifiedBy>

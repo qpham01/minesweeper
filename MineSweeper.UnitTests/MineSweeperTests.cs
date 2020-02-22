@@ -88,15 +88,15 @@ namespace MineSweeper.UnitTests
             Assert.AreEqual(MineSweeper.Unexplored, playerMap[3, 2]);
 
             _sut.ExploreSpace(_map2, playerMap, 2, 3);
-            Assert.AreEqual('3', playerMap[1, 2]);
+            Assert.AreEqual('.', playerMap[1, 2]);
             Assert.AreEqual('2', playerMap[2, 2]);
             Assert.AreEqual('3', playerMap[1, 3]);
             Assert.AreEqual('3', playerMap[1, 3]);
-            Assert.AreEqual('4', playerMap[1, 4]);
+            Assert.AreEqual('.', playerMap[1, 4]);
             Assert.AreEqual(MineSweeper.Unexplored, playerMap[1, 5]);
             Assert.AreEqual(MineSweeper.Unexplored, playerMap[0, 4]);
             Assert.AreEqual('0', playerMap[3, 3]);
-            Assert.AreEqual('1', playerMap[4, 2]);
+            Assert.AreEqual('.', playerMap[4, 2]);
             Assert.AreEqual('1', playerMap[4, 3]);
             Assert.AreEqual(MineSweeper.Unexplored, playerMap[5, 1]);
             Assert.AreEqual(MineSweeper.Unexplored, playerMap[5, 2]);

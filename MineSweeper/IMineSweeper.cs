@@ -8,5 +8,6 @@ namespace MineSweeper
         void PopulateMines(int[,] mineMap, int mineCount);
         void ExploreSpace(int[,] mineMap, char[,] playerMap, int row, int column);
         void InitializeBlank(char[,] playerMap);
+        void ShowAllMines(int[,] mineMap, char[,] playerMap);
     }
 }

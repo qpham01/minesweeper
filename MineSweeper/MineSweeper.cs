@@ -7,6 +7,7 @@ namespace MineSweeper
     public class MineSweeper : IMineSweeper
     {
         public const char Unexplored = '.';
+        public const char Mine = 'M';
 
         public int CountAdjacentMines(int[,] mineMap, int row, int column)
         {
@@ -79,6 +80,7 @@ namespace MineSweeper
                     {
                         if (iColumn < 0) continue;
                         if (iColumn >= columnCount) continue;
+                        if (iColumn != currentColumn && iRow != currentRow) continue;
                         if (playerMap[iRow, iColumn] != MineSweeper.Unexplored) continue;
 
                         mineCount = CountAdjacentMines(mineMap, iRow, iColumn);
@@ -103,6 +105,22 @@ namespace MineSweeper
                 for (var column = 0; column < columnCount; ++column)
                 {
                     playerMap[row, column] = Unexplored;
+                }
+            }
+        }
+        public void ShowAllMines(int[,] mineMap, char[,] playerMap)
+        {
+            var rowCount = playerMap.GetLength(0);
+            var columnCount = playerMap.GetLength(1);
+
+            for (var row = 0; row < rowCount; ++row)
+            {
+                for (var column = 0; column < columnCount; ++column)
+                {
+                    if (mineMap[row, column] == 1)
+                    {
+                        playerMap[row, column] = Mine;
+                    }
                 }
             }
         }

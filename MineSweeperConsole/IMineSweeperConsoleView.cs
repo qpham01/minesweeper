@@ -6,6 +6,6 @@ namespace MineSweeperConsole
 {
     interface IMineSweeperConsoleView
     {
-        void RenderMap(char[,] playerMap);
+        void RenderMap(char[,] playerMap, int markRow, int markColumn);
     }
 }
