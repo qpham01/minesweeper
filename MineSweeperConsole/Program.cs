@@ -7,14 +7,17 @@ namespace MineSweeperConsole
 {
     class Program
     {
+        private static IMineSweeperConsoleView _view;
+
         static void Main(string[] args)
         {
-            var rowCount = GetIntegers("Enter number of rows", 1, 10, 40).First();
-            var columnCount = GetIntegers("Enter number of columns", 1, 10, 40).First();
+            _view = new MineSweeperConsoleView();
+            var rowCount = _view.GetIntegers("Enter number of rows", 1, 10, 40).First();
+            var columnCount = _view.GetIntegers("Enter number of columns", 1, 10, 40).First();
             var spaceCount = rowCount * columnCount;
             var minMine = (int) (0.05 * spaceCount);
             var maxMine = (int) (0.25 * spaceCount);
-            var mineCount = GetIntegers("Enter the mine count", 1, minMine, maxMine).First();
+            var mineCount = _view.GetIntegers("Enter the mine count", 1, minMine, maxMine).First();
             var map = new int[rowCount, columnCount];
             var mineSweeper = new MineSweeper.MineSweeper();
             mineSweeper.PopulateMines(map, mineCount);
@@ -25,7 +28,6 @@ namespace MineSweeperConsole
 
         private static void RunGame(IMineSweeper mineSweeper, int[,] mineMap, char[,] playerMap)
         {
-            var view = new MineSweeperConsoleView();
             var rowCount = mineMap.GetLength(0);
             var columnCount = mineMap.GetLength(1);
             var row = -1;
@@ -34,9 +36,9 @@ namespace MineSweeperConsole
             {
                 while (true)
                 {
-                    view.RenderMap(playerMap, row, column);
-                    row = GetIntegers("Enter row to explore", 1, 0, rowCount - 1).First();
-                    column = GetIntegers("Enter column to explore", 1, 0, columnCount - 1).First();
+                    _view.RenderMap(playerMap, row, column);
+                    row = _view.GetIntegers("Enter row to explore", 1, 0, rowCount - 1).First();
+                    column = _view.GetIntegers("Enter column to explore", 1, 0, columnCount - 1).First();
                     mineSweeper.ExploreSpace(mineMap, playerMap, row, column);
                 }
             }
@@ -44,38 +46,9 @@ namespace MineSweeperConsole
             {
                 Console.WriteLine("Mine hit! Game over!");
                 mineSweeper.ShowAllMines(mineMap, playerMap);
-                view.RenderMap(playerMap, row, column);
+                _view.RenderMap(playerMap, row, column);
 
             }
-        }
-
-        private static int[] GetIntegers(string prompt, int numberCount, int min = int.MinValue, int max = int.MaxValue)
-        {
-            var results = new List<int>();
-            while (true)
-            {
-                Console.Write($"{prompt} ({min} - {max}): ");
-                var entry = Console.ReadLine();
-                var numbers = entry.Split(new char[] {' ', ','});
-                try
-                {
-                    foreach (var number in numbers)
-                    {
-                        var value = int.Parse(number);
-                        if (value < min || value > max) throw new ArgumentException();
-                        results.Add(value);
-                    }
-
-                    break;
-                }
-                catch
-                {
-                    Console.WriteLine($"{entry} is not {numberCount} comma-separated integers between {min} and {max}.  Try again.");
-                    continue;
-                }
-            } 
-
-            return results.ToArray();
         }
     }
 }

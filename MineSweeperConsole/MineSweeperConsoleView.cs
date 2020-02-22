@@ -20,5 +20,34 @@ namespace MineSweeperConsole
                 Console.Write(Environment.NewLine);
             }
         }
+
+        public int[] GetIntegers(string prompt, int numberCount, int min = int.MinValue, int max = int.MaxValue)
+        {
+            var results = new List<int>();
+            while (true)
+            {
+                Console.Write($"{prompt} ({min} - {max}): ");
+                var entry = Console.ReadLine();
+                var numbers = entry.Split(new char[] { ' ', ',' });
+                try
+                {
+                    foreach (var number in numbers)
+                    {
+                        var value = int.Parse(number);
+                        if (value < min || value > max) throw new ArgumentException();
+                        results.Add(value);
+                    }
+
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine($"{entry} is not {numberCount} comma-separated integers between {min} and {max}.  Try again.");
+                    continue;
+                }
+            }
+
+            return results.ToArray();
+        }
     }
 }
