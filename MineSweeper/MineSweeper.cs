@@ -30,22 +30,24 @@ namespace MineSweeper
             return mineCount;
         }
 
-        public int PopulateMines(int[,] mineMap, double probability)
+        public void PopulateMines(int[,] mineMap, int mineCount)
         {
             var rand = new Random();
             var rowCount = mineMap.GetLength(0);
             var columnCount = mineMap.GetLength(1);
-            var mineCount = 0;
-            for (var row = 0; row < rowCount; ++row)
+            for (var minesLaid = 0; minesLaid < mineCount; ++minesLaid)
             {
-                for (var column = 0; column < columnCount; ++column)
+                while (true)
                 {
-                    mineMap[row, column] = (rand.NextDouble() < probability) ? 1 : 0;
-                    mineCount += mineMap[row, column];
+                    var row = rand.Next(0, rowCount);
+                    var column = rand.Next(0, columnCount);
+                    if (mineMap[row, column] == 0)
+                    {
+                        mineMap[row, column] = 1;
+                        break;
+                    }
                 }
             }
-
-            return mineCount;
         }
 
         public void ExploreSpace(int[,] mineMap, char[,] playerMap, int row, int column)

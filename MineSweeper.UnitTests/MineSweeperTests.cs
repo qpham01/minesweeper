@@ -45,14 +45,22 @@ namespace MineSweeper.UnitTests
             Assert.AreEqual(count, _sut.CountAdjacentMines(_map1, x, y));
         }
 
-        [TestCase(20, 20, .2, 70, 90)]
-        [TestCase(30, 20, .33, 180, 220)]
-        [TestCase(30, 40, .5, 560, 640)]
-        public void TestPopulateMines(int rowCount, int columnCount, double probability, int min, int max)
+        [TestCase(20, 20, 40)]
+        [TestCase(30, 20, 100)]
+        [TestCase(30, 40, 500)]
+        public void TestPopulateMines(int rowCount, int columnCount, int mineCount)
         {
             var map = new int[rowCount, columnCount];
-            var mineCount = _sut.PopulateMines(map, probability);
-            Assert.That(mineCount >= min && mineCount <= max, $"Mine count {mineCount}");
+            _sut.PopulateMines(map, mineCount);
+            var mines = 0;
+            for (var row = 0; row < rowCount; ++row)
+            {
+                for (var column = 0; column < columnCount; ++column)
+                {
+                    mines += map[row, column];
+                }
+            }
+            Assert.AreEqual(mineCount, mines);
         }
 
         [Test]
