@@ -21,6 +21,23 @@ namespace MineSweeperConsole
             }
         }
 
+        public string[] GetLineTokens(string prompt, string expectedInput, int tokenCount)
+        {
+            while (true)
+            {
+                Console.Write($"{prompt} ({expectedInput}): ");
+                var entry = Console.ReadLine();
+                var inputs = entry?.Split(new char[] {' ', ','});
+                if (inputs == null || inputs.Length != tokenCount)
+                {
+                    Console.WriteLine($"{entry} is not {expectedInput}.  Try again.");
+                    continue;
+
+                }
+                return inputs;
+            }
+        }
+
         public int[] GetIntegers(string prompt, int numberCount, int min = int.MinValue, int max = int.MaxValue)
         {
             var results = new List<int>();

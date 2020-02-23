@@ -32,14 +32,38 @@ namespace MineSweeperConsole
             var columnCount = mineMap.GetLength(1);
             var row = -1;
             var column = -1;
+            const string commandPrompt = "Enter space to explore or flag";
+            const string expectedInput = "e or f,row,column";
             try
             {
                 while (true)
                 {
                     _view.RenderMap(playerMap, row, column);
-                    row = _view.GetIntegers("Enter row to explore", 1, 0, rowCount - 1).First();
-                    column = _view.GetIntegers("Enter column to explore", 1, 0, columnCount - 1).First();
-                    mineSweeper.ExploreSpace(mineMap, playerMap, row, column);
+                    string command;
+                    while (true)
+                    {
+                        var inputs = _view.GetLineTokens(commandPrompt, expectedInput, 3);
+                        if ((inputs[0] != "e" && inputs[0] != "f") ||
+                            !int.TryParse(inputs[1], out row) ||
+                            !int.TryParse(inputs[2], out column))
+                        {
+                            Console.WriteLine($"{inputs[0]},{inputs[1]},{inputs[2]} is not {expectedInput}");
+                            continue;
+                        }
+
+                        command = inputs[0];
+                        break;
+                    }
+
+                    if (command == "e")
+                    {
+                        mineSweeper.ExploreSpace(mineMap, playerMap, row, column);
+                    }
+
+                    if (command == "f")
+                    {
+                        playerMap[row, column] = 'F';
+                    }
                 }
             }
             catch (InvalidOperationException)
