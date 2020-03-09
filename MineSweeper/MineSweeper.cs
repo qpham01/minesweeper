@@ -9,6 +9,9 @@ namespace MineSweeper
         public const char Unexplored = '.';
         public const char Mine = 'M';
 
+        private int _spacesExplored;
+        private int _emptySpaces;
+
         public int CountAdjacentMines(int[,] mineMap, int row, int column)
         {
             if (mineMap[row, column] == 1) return -1;
@@ -36,6 +39,7 @@ namespace MineSweeper
             var rand = new Random();
             var rowCount = mineMap.GetLength(0);
             var columnCount = mineMap.GetLength(1);
+            _emptySpaces = rowCount * columnCount - mineCount;
             for (var minesLaid = 0; minesLaid < mineCount; ++minesLaid)
             {
                 while (true)
@@ -59,6 +63,7 @@ namespace MineSweeper
                 throw new InvalidOperationException("Hit a mine!");
             }
             playerMap[row, column] = (char)('0' + mineCount);
+            _spacesExplored++;
             if (mineCount != 0) return;
             var exploreStack = new Stack<Tuple<int, int>>();
             var rowCount = mineMap.GetLength(0);
@@ -90,6 +95,7 @@ namespace MineSweeper
                         }
 
                         playerMap[iRow, iColumn] = (char)('0' + mineCount);
+                        _spacesExplored++;
                     }
                 }
             }
@@ -123,6 +129,11 @@ namespace MineSweeper
                     }
                 }
             }
+        }
+
+        public bool AllExplored()
+        {
+           return _spacesExplored == _emptySpaces;
         }
     }
 }

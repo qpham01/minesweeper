@@ -9,5 +9,6 @@ namespace MineSweeper
         void ExploreSpace(int[,] mineMap, char[,] playerMap, int row, int column);
         void InitializeBlank(char[,] playerMap);
         void ShowAllMines(int[,] mineMap, char[,] playerMap);
+        bool AllExplored();
     }
 }

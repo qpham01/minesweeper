@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ConsoleView\ConsoleView.csproj" />
     <ProjectReference Include="..\MineSweeper\MineSweeper.csproj" />
   </ItemGroup>
 
