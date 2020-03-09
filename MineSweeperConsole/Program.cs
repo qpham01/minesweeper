@@ -14,8 +14,8 @@ namespace MineSweeperConsole
         {
             _gridView = new ConsoleGridView();
             _input = new ConsoleInput();
-            var rowCount = _input.GetIntegers("Enter number of rows", 1, 10, 40).First();
-            var columnCount = _input.GetIntegers("Enter number of columns", 1, 10, 40).First();
+            var rowCount = _input.GetIntegers("Enter number of rows", 1, 5, 40).First();
+            var columnCount = _input.GetIntegers("Enter number of columns", 1, 5, 40).First();
             var spaceCount = rowCount * columnCount;
             var minMine = (int) (0.05 * spaceCount);
             var maxMine = (int) (0.25 * spaceCount);
@@ -62,9 +62,11 @@ namespace MineSweeperConsole
                         mineSweeper.ExploreSpace(mineMap, playerMap, row, column);
                         if (mineSweeper.AllExplored())
                         {
-                            Console.WriteLine("You win the game!");
                             mineSweeper.ShowAllMines(mineMap, playerMap);
                             _gridView.RenderMap(playerMap, row, column);
+                            Console.WriteLine("*****************");
+                            Console.WriteLine("You win the game!");
+                            Console.WriteLine("*****************");
                             break;
                         }
                     }
@@ -80,7 +82,6 @@ namespace MineSweeperConsole
                 Console.WriteLine("Mine hit! Game over!");
                 mineSweeper.ShowAllMines(mineMap, playerMap);
                 _gridView.RenderMap(playerMap, row, column);
-
             }
         }
     }

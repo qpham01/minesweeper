@@ -9,15 +9,21 @@ namespace ConsoleView
         {
             var rowCount = playerMap.GetLength(0);
             var columnCount = playerMap.GetLength(1);
-            Console.Write("   ");
+            Console.Write("    ");
             for (var column = 0; column < columnCount; ++column)
             {
                 Console.Write($"{column,2} ");
             }
             Console.WriteLine("");
+            Console.Write("    ");
+            for (var column = 0; column < columnCount; ++column)
+            {
+                Console.Write($"---");
+            }
+            Console.WriteLine("");
             for (var row = 0; row < rowCount; row++)
             {
-                Console.Write($"{row,2} ");
+                Console.Write($"{row,2} |");
                 for (var column = 0; column < columnCount; column++)
                 {
                     var mark = row == markRow && column == markColumn ? '*' : ' ';

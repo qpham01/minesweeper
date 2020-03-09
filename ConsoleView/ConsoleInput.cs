@@ -29,8 +29,8 @@ namespace ConsoleView
             while (true)
             {
                 Console.Write($"{prompt} ({min} - {max}): ");
-                var entry = Console.ReadLine();
-                var numbers = entry.Split(new char[] { ' ', ',' });
+                var entry = Console.ReadLine()?.Trim();
+                var numbers = entry?.Split(new char[] { ' ', ',' });
                 try
                 {
                     foreach (var number in numbers)
