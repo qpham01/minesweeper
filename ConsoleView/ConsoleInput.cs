@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ConsoleView
 {
     public class ConsoleInput : IConsoleInput
     {
+        private readonly char[] _separators = new char[] {' ', ','};
+
         public string[] GetLineTokens(string prompt, string expectedInput, int tokenCount)
         {
             while (true)
             {
                 Console.Write($"{prompt} ({expectedInput}): ");
-                var entry = Console.ReadLine();
-                var inputs = entry?.Split(new char[] { ' ', ',' });
+                var entry = Console.ReadLine()?.Trim();
+                var inputs = entry?.Split(_separators);
                 if (inputs == null || inputs.Length != tokenCount)
                 {
                     Console.WriteLine($"{entry} is not {expectedInput}.  Try again.");
@@ -30,7 +31,7 @@ namespace ConsoleView
             {
                 Console.Write($"{prompt} ({min} - {max}): ");
                 var entry = Console.ReadLine()?.Trim();
-                var numbers = entry?.Split(new char[] { ' ', ',' });
+                var numbers = entry?.Split(_separators);
                 try
                 {
                     foreach (var number in numbers)
